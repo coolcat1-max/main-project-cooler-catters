@@ -2,7 +2,9 @@
     "name": "MAIN PROJECT COOLER CATTERS",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "darts": "*",
+        "color-coded-tilemap": "*"
     },
     "files": [
         "main.blocks",
