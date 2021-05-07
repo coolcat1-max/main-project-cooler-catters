@@ -7,7 +7,7 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 function GAME_OVER () {
     if (KNIFE.isHittingTile(CollisionDirection.Bottom)) {
-        game.over(false)
+        game.over(false, effects.melt)
         scene.setBackgroundImage(img`
             ................................................................................................................................................................
             ................................................................................................................................................................
@@ -144,10 +144,39 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
     info.changeScoreBy(100)
     effects.confetti.startScreenEffect()
-    music.pewPew.play()
+    music.playMelody("C5 F - B - A C C ", 120)
+    music.setVolume(255)
     game.over(true)
 })
 let KNIFE: Sprite = null
+scene.setTileMap(img`
+    . . . . . . . . . . 
+    . . . . . . . . . . 
+    . . . . . . . . . . 
+    . . . . . . . . . . 
+    . . . . . . . . . . 
+    . . . . . . . . . . 
+    . . . . . . . . . . 
+    f f f f f f f f f f 
+    `, TileScale.Sixteen)
+scene.setTile(15, img`
+    c c c c c c c c c c c c c c c c 
+    8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
+    8 8 8 6 6 6 8 8 8 6 6 6 6 8 8 8 
+    6 6 8 8 8 6 6 6 6 6 6 8 8 8 8 6 
+    6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+    9 9 6 6 6 6 6 9 9 9 9 6 6 6 9 9 
+    6 6 6 6 9 9 9 6 6 6 9 9 9 9 9 9 
+    9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+    9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+    9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+    9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+    9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+    9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+    9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+    9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+    9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+    `, true)
 KNIFE = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
