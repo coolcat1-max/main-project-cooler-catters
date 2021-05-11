@@ -1235,7 +1235,7 @@ mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
 controller.moveSprite(mySprite)
-tiles.setTilemap(tilemap`level2`)
+tiles.setTilemap(tilemap`level3`)
 tiles.placeOnRandomTile(mySprite, sprites.castle.rock2)
 scene.cameraFollowSprite(mySprite)
 info.startCountdown(20)
