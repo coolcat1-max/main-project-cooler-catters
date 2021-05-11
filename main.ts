@@ -160,22 +160,22 @@ scene.setTileMap(img`
     f f f f f f f f f f 
     `, TileScale.Sixteen)
 scene.setTile(15, img`
-    c c c c c c c c c c c c c c c c 
-    8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
-    8 8 8 6 6 6 8 8 8 6 6 6 6 8 8 8 
-    6 6 8 8 8 6 6 6 6 6 6 8 8 8 8 6 
-    6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
-    9 9 6 6 6 6 6 9 9 9 9 6 6 6 9 9 
-    6 6 6 6 9 9 9 6 6 6 9 9 9 9 9 9 
-    9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
-    9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
-    9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
-    9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
-    9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
-    9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
-    9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
-    9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
-    9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+    f f f f f f f f f f f f f f f f 
+    f f f f f f f f f f f f f f f f 
+    f f f f f f f f f f f f f f f f 
+    f f f f f f f f f f f f f f f f 
+    f f f f f f f f f f f f f f f f 
+    f f f f f f f f f f f f f f f f 
+    f f f f f f f f f f f f f f f f 
+    f f f f f f f f f f f f f f f f 
+    f f f f f f f f f f f f f f f f 
+    f f f f f f f f f f f f f f f f 
+    f f f f f f f f f f f f f f f f 
+    f f f f f f f f f f f f f f f f 
+    f f f f f f f f f f f f f f f f 
+    . f f f f f f f f f f f f f f . 
+    . f f f f f f f f f f f f f f . 
+    . . . f f f f f f f f f f . . . 
     `, true)
 KNIFE = sprites.create(img`
     . . . . . . . . . . . . . . . . 

@@ -2,16 +2,13 @@
     "name": "MAIN PROJECT COOLER CATTERS",
     "description": "",
     "dependencies": {
-        "device": "*",
-        "color-coded-tilemap": "*"
+        "device": "*"
     },
     "files": [
         "main.blocks",
         "main.ts",
         "README.md",
-        "assets.json",
-        "tilemap.g.jres",
-        "tilemap.g.ts"
+        "assets.json"
     ],
     "testFiles": [
         "test.ts"
@@ -22,6 +19,5 @@
     },
     "supportedTargets": [
         "arcade"
-    ],
-    "preferredEditor": "blocksprj"
+    ]
 }
