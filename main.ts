@@ -149,7 +149,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherS
     game.over(true)
 })
 let KNIFE: Sprite = null
-scene.setTileMap(img`
+scene.setTileMap
+
+(img`
     . . . . . . . . . . 
     . . . . . . . . . . 
     . . . . . . . . . . 
@@ -158,7 +160,7 @@ scene.setTileMap(img`
     . . . . . . . . . . 
     . . . . . . . . . . 
     f f f f f f f f f f 
-    `, TileScale.Sixteen)
+        `, TileScale.Sixteen)
 scene.setTile(15, img`
     f f f f f f f f f f f f f f f f 
     f f f f f f f f f f f f f f f f 
