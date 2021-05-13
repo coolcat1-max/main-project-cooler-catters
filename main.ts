@@ -1,6 +1,3 @@
-scene.onOverlapTile(SpriteKind.Player, sprites.castle.rock1, function (sprite, location) {
-    game.over(true)
-})
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     mySprite,
@@ -1214,6 +1211,9 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     500,
     false
     )
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.castle.rock0, function (sprite, location) {
+    game.over(true)
 })
 let mySprite: Sprite = null
 mySprite = sprites.create(img`
