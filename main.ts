@@ -1212,6 +1212,10 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     false
     )
 })
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.hazardLava0, function (sprite, location) {
+    game.over(false)
+    game.reset()
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.castle.rock0, function (sprite, location) {
     game.over(true)
 })
