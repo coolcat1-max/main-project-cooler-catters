@@ -1216,7 +1216,7 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.hazardLava0, function (sp
     game.over(false)
     game.reset()
 })
-scene.onOverlapTile(SpriteKind.Player, sprites.castle.rock0, function (sprite, location) {
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonOrange, function (sprite, location) {
     game.over(true)
 })
 let mySprite: Sprite = null
@@ -1242,4 +1242,4 @@ controller.moveSprite(mySprite)
 tiles.setTilemap(tilemap`level3`)
 tiles.placeOnRandomTile(mySprite, sprites.castle.rock2)
 scene.cameraFollowSprite(mySprite)
-info.startCountdown(20)
+info.startCountdown(10)
