@@ -81,6 +81,12 @@ function Animztion () {
     false
     )
 }
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
+    Animztion()
+    mySprite.say("!!!!!!!!!!!!!!", 5000)
+    info.changeScoreBy(1)
+    game.over(true)
+})
 let mySprite: Sprite = null
 let mySprite2 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
