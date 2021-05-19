@@ -81,7 +81,7 @@ function Animztion () {
     false
     )
 }
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonOrange, function (sprite, location) {
     Animztion()
     mySprite.say("!!!!!!!!!!!!!!", 5000)
     info.changeScoreBy(1)
