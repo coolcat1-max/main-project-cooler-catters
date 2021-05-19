@@ -1421,7 +1421,7 @@ controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
 	
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonOrange, function (sprite, location) {
-    Animztion()
+    game.over(true)
 })
 let mySprite: Sprite = null
 music.baDing.play()
