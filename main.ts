@@ -1418,7 +1418,7 @@ function Animztion () {
     )
 }
 controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
-	
+    Animztion()
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonOrange, function (sprite, location) {
     game.over(true)
