@@ -81,12 +81,6 @@ function Animztion () {
     false
     )
 }
-scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonOrange, function (sprite, location) {
-    Animztion()
-    mySprite.say("!!!!!!!!!!!!!!", 5000)
-    info.changeScoreBy(1)
-    game.over(true)
-})
 let mySprite: Sprite = null
 let mySprite2 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
