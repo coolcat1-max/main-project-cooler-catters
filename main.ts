@@ -1,9 +1,11 @@
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, location) {
+    Animztion()
+    mySprite.say("!!!!!!!!!!!!!!", 5000)
+    info.changeScoreBy(1)
+    game.over(true)
+})
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     Animztion()
-})
-scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.hazardLava0, function (sprite, location) {
-    game.over(false)
-    game.reset()
 })
 function Animztion () {
     animation.runImageAnimation(
@@ -81,31 +83,7 @@ function Animztion () {
     false
     )
 }
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
-    Animztion()
-    mySprite.say("!!!!!!!!!!!!!!", 5000)
-    info.changeScoreBy(1)
-    game.over(true)
-})
 let mySprite: Sprite = null
-let mySprite2 = sprites.create(img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    `, SpriteKind.Player)
 info.setScore(0)
 music.baDing.play()
 mySprite = sprites.create(img`
@@ -130,3 +108,21 @@ controller.moveSprite(mySprite)
 tiles.setTilemap(tilemap`level3`)
 tiles.placeOnRandomTile(mySprite, sprites.castle.rock2)
 scene.cameraFollowSprite(mySprite)
+let mySprite3 = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . 5 . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Player)
